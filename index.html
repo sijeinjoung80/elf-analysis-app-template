@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aplikasi Analisis Diri</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Analisis Diri</h1>
+    <form id="selfForm">
+      <label>Nama: <input type="text" id="name" required /></label><br />
+      <label>Umur: <input type="number" id="age" required /></label><br />
+      <label>Kepribadian (MBTI): <input type="text" id="personality" /></label><br />
+      <label>Tujuan Hidup: <input type="text" id="goals" /></label><br />
+      <button type="submit">Simpan Data</button>
+    </form>
+
+    <h2>Input Perkembangan</h2>
+    <form id="progressForm">
+      <label>Tanggal: <input type="date" id="date" required /></label><br />
+      <label>Jam Belajar Hari Ini: <input type="number" id="learningHours" required /></label><br />
+      <label>Skor Kebiasaan (1-100): <input type="number" id="habitScore" required /></label><br />
+      <button type="submit">Simpan Perkembangan</button>
+    </form>
+
+    <h2>Grafik Perkembangan</h2>
+    <canvas id="progressChart" width="400" height="200"></canvas>
+
+    <h2>Rekomendasi</h2>
+    <div id="recommendationBox"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
